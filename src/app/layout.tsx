@@ -1,6 +1,12 @@
 import React from 'react'
 import { Metadata } from 'next'
 
+import { Crimson_Pro } from 'next/font/google';
+export const crimsonPro = Crimson_Pro({ subsets: ['latin'],
+weight: ['400', '700'],
+variable: '--font-crimson' });
+
+
 import { AdminBar } from './_components/AdminBar'
 import { Footer } from './_components/Footer'
 import { Header } from './_components/Header'
@@ -18,12 +24,14 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
-      <body>
+      <body className={crimsonPro.variable}>
         <Providers>
           <AdminBar />
           {/* @ts-expect-error */}
           <Header />
+          <main className='main'>
           {children}
+          </main>
           {/* @ts-expect-error */}
           <Footer />
         </Providers>
