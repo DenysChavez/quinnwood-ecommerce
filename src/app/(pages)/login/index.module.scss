@@ -10,7 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('/assets/images/cheese_board.jpg');
+    background-image: url('/assets/images/woodtexture.jpg');
   }
 
   p {
@@ -43,11 +43,13 @@
   background-position: center;
   background-image: url('/assets/images/hammer_1.jpg');
 
+
   @include mid-break {
     background: none;
     display: flex;
     justify-content: center;
   }
+
 }
 
 .logo {
