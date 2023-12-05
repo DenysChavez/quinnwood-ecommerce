@@ -27,7 +27,7 @@
 
 html {
   @extend %body;
-  // background: var(--theme-bg);
+  background: var(--color-background-main);
   -webkit-font-smoothing: antialiased;
   opacity: 0;
 
