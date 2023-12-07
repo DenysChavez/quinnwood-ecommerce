@@ -6,7 +6,7 @@ import Link from 'next/link'
 import classes from './index.module.scss'
 import Image from 'next/image'
 import { HeaderNav } from '../Nav'
-import { noHeaderFooterUrls } from '../../../constants/inde'
+import { noHeaderFooterUrls } from '../../../constants'
 import { usePathname } from 'next/navigation'
 
 const HeaderComponent = ({ header }: { header: Header }) => {

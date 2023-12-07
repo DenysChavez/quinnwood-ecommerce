@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import classes from './index.module.scss'
-import { inclusions, noHeaderFooterUrls } from '../../../constants/inde'
+import { inclusions, noHeaderFooterUrls } from '../../../constants'
 import { usePathname } from 'next/navigation'
 import { Gutter } from '../../Gutter'
 import Image from 'next/image'
