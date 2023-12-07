@@ -5,6 +5,10 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(to bottom, #494231, #494231), linear-gradient(to right, #494231, #494231), linear-gradient(to left, #494231, #494231);
+  background-size: 5px 30%, 100% 5px, 5px 30%;
+  background-position: left bottom, bottom left, right bottom;
+  background-repeat: no-repeat;
 }
 
 .content {
@@ -12,7 +16,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  background-color: white;
+  // background-color: black;
   width: 100%;
 
   @include small-break {
@@ -74,7 +78,7 @@
   display: block;
   position: relative;
   min-height: 262px;
-  background-color: var(--color-dark-50);
+  // background-color: var(--color-dark-50);
 }
 
 .image {
