@@ -20,6 +20,8 @@
   flex-direction: column;
   gap: 12px;
   font-size: 18px;
+  color: var(--color-gold);
+  text-align: center;
 
   @include small-break {
     grid-template-columns: 1fr;

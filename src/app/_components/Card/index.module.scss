@@ -4,9 +4,7 @@
   border-radius: 4px;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
+  flex-direction: column; 
   background-image: linear-gradient(to bottom, #494231, #494231), linear-gradient(to right, #494231, #494231), linear-gradient(to left, #494231, #494231);
   background-size: 5px 30%, 100% 5px, 5px 30%;
   background-position: left bottom, bottom left, right bottom;
@@ -14,11 +12,13 @@
 }
 
 .content {
+  padding: 8px 0;
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
   width: 100%;
-
+  align-items: center;
+  gap: 15px;
   @include small-break {
     padding: calc(var(--base) / 2);
     gap: calc(var(--base) / 4);
@@ -52,6 +52,7 @@
   font-weight: 600;
   margin: 0;
   color: var(--color-gold);
+
 }
 
 .leader {
@@ -61,14 +62,20 @@
 }
 
 .description {
-  margin: 0;
+  margin-bottom: 0;
+
+  padding-right: 10px;
+  padding-left: 10px;
   line-height: 24px;
   font-size: 20px;
+  text-align: center;
   color: var(--color-gray-10);
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 10px;
 }
 
 .hideImageOnMobile {

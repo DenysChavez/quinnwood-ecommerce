@@ -170,7 +170,7 @@ export const CollectionArchive: React.FC<Props> = props =>
             {results.docs?.map((result, index) => {
               return (
                 
-                  <Card relationTo="products" doc={result} showCategories />
+                  <Card key={index} relationTo="products" doc={result} showCategories />
               )
             })}
           </div>
