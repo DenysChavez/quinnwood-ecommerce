@@ -9,30 +9,30 @@ import { Button } from '../../Button'
 import Link from 'next/link'
 import { Footer, Media } from '../../../../payload/payload-types'
 
-const FooterComponent = ({ footer }: {footer: Footer }) => {
-    const pathname = usePathname();
-    const navItems = footer?.navItems || []
+const FooterComponent = ({ footer }: { footer: Footer }) => {
+  const pathname = usePathname()
+  const navItems = footer?.navItems || []
   return (
-    <footer className={noHeaderFooterUrls.includes(pathname) ? classes.hide : ""}>
-        <Gutter>
-            <ul className={classes.inclusions}>
-                {inclusions.map(inclusions => (
-                    <li key={inclusions.title}>
- <Image 
-                    src={inclusions.icon}
-                    alt={inclusions.title}
-                    width={36}
-                    height={36}
-                    className={classes.icon}/>
-                    <h5 className={classes.title}>{inclusions.title}</h5>
-                    <p>{inclusions.description}</p>
-                    </li>
-                   
-                ))}
-            </ul>
-        </Gutter>
+    <footer className={noHeaderFooterUrls.includes(pathname) ? classes.hide : ''}>
+      <Gutter>
+        <ul className={classes.inclusions}>
+          {inclusions.map(inclusions => (
+            <li key={inclusions.title}>
+              <Image
+                src={inclusions.icon}
+                alt={inclusions.title}
+                width={36}
+                height={36}
+                className={classes.icon}
+              />
+              <h5 className={classes.title}>{inclusions.title}</h5>
+              <p>{inclusions.description}</p>
+            </li>
+          ))}
+        </ul>
+      </Gutter>
 
-        <div className={classes.footer}>
+      <div className={classes.footer}>
         <Gutter>
           <div className={classes.wrap}>
             <Link href="/">
@@ -67,7 +67,6 @@ const FooterComponent = ({ footer }: {footer: Footer }) => {
           </div>
         </Gutter>
       </div>
-
     </footer>
   )
 }

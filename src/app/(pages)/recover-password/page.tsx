@@ -9,10 +9,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { RenderParams } from '../../_components/RenderParams'
 
-
 export default async function RecoverPassword() {
   return (
-<section className={classes.recoverPassword}>
+    <section className={classes.recoverPassword}>
       <div className={classes.heroImg}>
         <Link href="/">
           <Image

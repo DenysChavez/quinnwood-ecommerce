@@ -22,7 +22,6 @@ export const dynamic = 'force-dynamic'
 
 import Categories from '../../_components/Categories'
 
-
 import classes from './index.module.scss'
 import Promotion from '../../_components/Promotion'
 

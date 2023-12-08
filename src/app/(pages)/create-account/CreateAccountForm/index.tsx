@@ -63,8 +63,8 @@ const CreateAccountForm: React.FC = () => {
         await login(data)
         clearTimeout(timer)
         if (redirect) router.push(redirect as string)
-        else router.push("/")
-      window.location.href = "/"
+        else router.push('/')
+        window.location.href = '/'
       } catch (_) {
         clearTimeout(timer)
         setError('There was an error with the credentials provided. Please try again.')
@@ -76,7 +76,7 @@ const CreateAccountForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
       <Message error={error} className={classes.message} />
-      
+
       <Input
         name="name"
         label="Full Name"
@@ -85,7 +85,7 @@ const CreateAccountForm: React.FC = () => {
         error={errors.email}
         type="text"
       />
-      
+
       <Input
         name="email"
         label="Email Address"

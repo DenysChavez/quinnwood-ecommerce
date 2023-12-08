@@ -10,8 +10,6 @@ import classes from './index.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 
-
-
 export default async function Login() {
   await getMeUser({
     validUserRedirect: `/account?warning=${encodeURIComponent('You are already logged in.')}`,

@@ -1,11 +1,12 @@
 import React from 'react'
 import { Metadata } from 'next'
 
-import { Crimson_Pro } from 'next/font/google';
-export const crimsonPro = Crimson_Pro({ subsets: ['latin'],
-weight: ['400', '700'],
-variable: '--font-crimson' });
-
+import { Crimson_Pro } from 'next/font/google'
+export const crimsonPro = Crimson_Pro({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-crimson',
+})
 
 import { AdminBar } from './_components/AdminBar'
 import { Footer } from './_components/Footer'
@@ -29,9 +30,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <AdminBar />
           {/* @ts-expect-error */}
           <Header />
-          <main className='main'>
-          {children}
-          </main>
+          <main className="main">{children}</main>
           {/* @ts-expect-error */}
           <Footer />
         </Providers>
